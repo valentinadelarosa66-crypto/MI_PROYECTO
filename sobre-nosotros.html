@@ -10,28 +10,41 @@
 </head>
 <body>
 
-    <!--  HEADER -->
-    <header class="shadow-sm">
-        <nav class="navbar navbar-expand-lg navbar-light bg-cream py-3">
-            <div class="container">
+   <header class="shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light bg-cream py-3">
+        <div class="container">
 
-                <a class="navbar-brand d-flex align-items-center" href="index.html">
-                    <img src="img/imagen8(Logo).jpg" alt="Logo" class="logo-img me-2">
-                    <span class="brand-name">Arte en Bolsos</span>
-                </a>
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="img/imagen8(Logo).jpg" alt="Logo" class="logo-img me-2">
+                <span class="brand-name">Arte en Bolsos</span>
+            </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <!-- Botón hamburguesa -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <div class="collapse navbar-collapse" id="mainNavbar">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-lg-3">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="sobre-nosotros.html">Sobre Nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link" href="compras.html">Compras</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-                    </ul>
-                     <!-- Buscador móvil -->
+            <!-- Navegación -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+
+                <!-- LINKS DEL MENÚ -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-lg-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="compras.html">Compras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+
+                <!-- Buscador móvil -->
                 <div class="d-lg-none w-100 my-2">
                     <div class="input-group">
                         <input type="text" class="form-control" id="inputMobileSearch" placeholder="Buscar bolsos...">
@@ -50,7 +63,7 @@
                     </a>
 
                     <!-- Carrito -->
-                    <a class="nav-icon position-relative me-3" href="#">
+                    <a class="nav-icon position-relative me-3" href="carrito.html">
                         <i class="fa fa-shopping-bag text-brown"></i>
                         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-rose text-dark" id="cartCount">0</span>
                     </a>
@@ -61,11 +74,10 @@
                     </a>
                 </div>
 
-                </div>
-
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
 
     <main class="py-5">
         <div class="container">
