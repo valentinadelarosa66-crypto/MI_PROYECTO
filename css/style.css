@@ -167,3 +167,13 @@ body {
         height: 260px;
     }
 }
+
+/* Barra superior de bienvenida */
+.topbar {
+    background-color: var(--rose);
+    color: #4b2b2b;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-size: 0.95rem;
+    border-bottom: 2px solid var(--gold);
+}
