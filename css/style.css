@@ -1,0 +1,169 @@
+/* Colores base */
+:root {
+    --cream: #f7f1e8;
+    --light-cream: #fbf6ef;
+    --brown: #6a4a3c;
+    --rose: #f7c3d0;
+    --rose-dark: #e59cb0;
+    --gold: #c9a24b;
+}
+
+/* Fondo general suave */
+body {
+    font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--light-cream);
+    color: var(--brown);
+}
+
+/* Navbar */
+.bg-cream {
+    background-color: var(--cream) !important;
+}
+
+.brand-name {
+    font-weight: 600;
+    color: var(--brown);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+/* Links navbar */
+.navbar-nav .nav-link {
+    color: var(--brown);
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    color: var(--gold);
+}
+
+/* Iconos navbar */
+.nav-icon i {
+    font-size: 1.2rem;
+}
+
+.text-brown {
+    color: var(--brown) !important;
+}
+
+.btn-rose {
+    background-color: var(--rose);
+    border-color: var(--rose);
+    color: #4b2b2b;
+    font-weight: 500;
+}
+
+.btn-rose:hover {
+    background-color: var(--rose-dark);
+    border-color: var(--rose-dark);
+    color: #4b2b2b;
+}
+
+/* Banner / carousel */
+.banner-img {
+    height: 420px;
+    object-fit: cover;
+    filter: brightness(0.8);
+}
+
+.carousel-caption h2,
+.carousel-caption p {
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.65);
+}
+
+/* Secciones */
+.section-title {
+    color: var(--brown);
+    font-weight: 600;
+}
+
+.bg-light-cream {
+    background-color: var(--light-cream);
+}
+
+/* Tarjetas categorías */
+.category-card {
+    border: none;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.category-card .card-title {
+    font-weight: 600;
+}
+
+.category-card .card-text {
+    font-size: 0.95rem;
+}
+
+/* Productos */
+.product-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.product-card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.price {
+    color: var(--gold);
+    font-weight: 700;
+}
+
+/* Testimonios */
+.testimonial-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    font-size: 0.95rem;
+}
+
+/* Footer */
+.bg-brown {
+    background-color: var(--brown) !important;
+}
+
+.footer-icon-link {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #f1e2d0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #f1e2d0;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.footer-icon-link:hover {
+    background-color: var(--rose);
+    border-color: var(--rose);
+    color: #4b2b2b;
+}
+
+/* Input suscripción */
+#subscribeEmail::placeholder {
+    color: #f1e2d0;
+}
+
+/* Responsive pequeños ajustes */
+@media (max-width: 767.98px) {
+    .banner-img {
+        height: 260px;
+    }
+}
