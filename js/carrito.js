@@ -76,3 +76,41 @@ function actualizarContadorCarrito() {
 
 actualizarContadorCarrito();
 
+// Guardar carrito en localStorage
+function saveCart(cart) {
+  localStorage.setItem("cart", JSON.stringify(cart));
+}
+
+// Cargar carrito al iniciar
+function loadCart() {
+  const cart = localStorage.getItem("cart");
+  return cart ? JSON.parse(cart) : [];
+}
+
+// Uso
+
+
+function addToCart(product) {
+  carrito.push(product);
+  saveCart(carrito);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  let carrito = loadCart();
+  const cartContainer = document.getElementById("cart-items");
+
+  carrito.forEach(product => {
+    const item = document.createElement("div");
+    item.textContent = product.name + " - $" + product.price;
+    cartContainer.appendChild(item);
+  });
+});
+
+function addToCart(product) {
+  carrito.push(product);
+  saveCart(carrito);
+  window.location.href = "carrito.html"; // Redirige al carrito
+}
+
+
+
