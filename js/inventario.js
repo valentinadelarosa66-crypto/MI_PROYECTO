@@ -26,7 +26,7 @@ const inventario = [
         precio: 130000,
         stock: 5,
         artesana: "Luisa Gómez",
-        imagen: "imagen4.jpg",
+        imagen: "imagen4.jpeg",
         descripcion: "Ligero, natural y perfecto para el verano."
     },
     {
