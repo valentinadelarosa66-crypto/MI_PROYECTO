@@ -11,3 +11,5 @@ document.getElementById("productoNombre").textContent = producto.nombre;
 document.getElementById("productoPrecio").textContent = "$" + producto.precio.toLocaleString();
 document.getElementById("productoDescripcion").textContent = producto.descripcion;
 document.getElementById("productoArtesana").textContent = producto.artesana;
+
+<button class="btn btn-rose btn-sm" onclick="agregarAlCarrito('${producto.id}')">Agregar</button>

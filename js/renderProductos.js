@@ -17,3 +17,5 @@ inventario.forEach(producto => {
         </div>
     `;
 });
+
+document.getElementById("btnAgregar").onclick = () => agregarAlCarrito(producto.id);
