@@ -11,75 +11,68 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-
-   <header class="shadow-sm">
-    <nav class="navbar navbar-expand-lg navbar-light bg-cream py-3">
-        <div class="container">
-
-            <!-- Logo -->
-            <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="img/imagen8(Logo).jpg" alt="Logo" class="logo-img me-2">
-                <span class="brand-name">Arte en Bolsos</span>
-            </a>
-            
-            <!-- Botón hamburguesa -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Navegación -->
-            <div class="collapse navbar-collapse" id="mainNavbar">
-
-                <!-- LINKS DEL MENÚ -->
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-lg-3">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="compras.html">Compras</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
-
-                <!-- Buscador móvil -->
-                <div class="d-lg-none w-100 my-2">
-                    <div class="input-group">
-                        <input type="text" class="form-control" id="inputMobileSearch" placeholder="Buscar bolsos...">
-                        <button class="btn btn-rose" id="btnMobileSearch">
-                            <i class="fa fa-search"></i>
-                        </button>
+    
+    <header class="shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light bg-cream py-3">
+            <div class="container">
+                 <!-- Logo -->
+                  <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="img/imagen8(Logo).jpg" alt="Logo" class="logo-img me-2">
+                    <span class="brand-name">Arte en Bolsos</span>
+                </a>
+                <!-- Botón hamburguesa -->
+                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navegación -->
+                 <div class="collapse navbar-collapse" id="mainNavbar">
+                    
+                    <!-- LINKS DEL MENÚ -->
+                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-lg-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="compras.html">Compras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Buscador móvil -->
+                     <div class="d-lg-none w-100 my-2">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="inputMobileSearch" placeholder="Buscar bolsos...">
+                            <button class="btn btn-rose" id="btnMobileSearch">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Iconos derecha (desktop) -->
+                     <div class="navbar-icons d-none d-lg-flex align-items-center">
+                        <!-- Lupa modal -->
+                         <a class="nav-icon me-3" href="#" data-bs-toggle="modal" data-bs-target="#searchModal">
+                            <i class="fa fa-search text-brown"></i>
+                        </a>
+                        
+                        <!-- Carrito -->
+                         <a class="nav-icon position-relative me-3" href="carrito.html">
+                            <i class="fa fa-shopping-bag text-brown"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-rose text-dark" id="cartCount">0</span>
+                        </a>
+                        <!-- Usuario -->
+                         <a class="nav-icon" href="#">
+                            <i class="fa fa-user text-brown"></i>
+                        </a>
                     </div>
                 </div>
-
-                <!-- Iconos derecha (desktop) -->
-                <div class="navbar-icons d-none d-lg-flex align-items-center">
-
-                    <!-- Lupa modal -->
-                    <a class="nav-icon me-3" href="#" data-bs-toggle="modal" data-bs-target="#searchModal">
-                        <i class="fa fa-search text-brown"></i>
-                    </a>
-
-                    <!-- Carrito -->
-                    <a class="nav-icon position-relative me-3" href="carrito.html">
-                        <i class="fa fa-shopping-bag text-brown"></i>
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-rose text-dark" id="cartCount">0</span>
-                    </a>
-
-                    <!-- Usuario -->
-                    <a class="nav-icon" href="#">
-                        <i class="fa fa-user text-brown"></i>
-                    </a>
-                </div>
-
             </div>
-        </div>
-    </nav>
-</header>
+        </nav>
+    </header>
 
     <!-- CONTENIDO DEL PRODUCTO (DINÁMICO) -->
     <main class="py-5">
@@ -95,12 +88,12 @@
                 <div class="col-md-6">
                     <h2 id="productoNombre" class="text-brown"></h2>
                     <p id="productoPrecio" class="price fs-3"></p>
-
+                    
                     <p id="productoDescripcion"></p>
 
                     <p><strong>Artesana:</strong> <span id="productoArtesana"></span></p>
 
-                    <button class="btn btn-rose btn-lg mt-3">Agregar al carrito</button>
+                    <button class="btn btn-rose btn-sm btn-add-cart">Agregar</button>
                 </div>
 
             </div>
