@@ -40,7 +40,7 @@ document.querySelectorAll(".filtro-btn").forEach(btn => {
     });
 });
 
-// ✅ BUSCADOR FUNCIONAL
+// ✅ Buscador funcional
 document.getElementById("buscador").addEventListener("input", (e) => {
     const texto = e.target.value.toLowerCase();
 
@@ -71,5 +71,6 @@ document.getElementById("buscador").addEventListener("input", (e) => {
         `;
     });
 });
+
 
 
