@@ -1,9 +1,16 @@
+// ===============================
+// ✅ CARRITO PRINCIPAL (FUNCIONAL)
+// ===============================
+
+// Cargar carrito desde localStorage
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
+// Guardar carrito
 function guardarCarrito() {
     localStorage.setItem("carrito", JSON.stringify(carrito));
 }
 
+// Agregar producto al carrito
 function agregarAlCarrito(idProducto) {
     const producto = inventario.find(p => p.id === idProducto);
     if (!producto) return;
@@ -26,6 +33,7 @@ function agregarAlCarrito(idProducto) {
     actualizarContadorCarrito();
 }
 
+// Eliminar producto
 function eliminarProducto(id) {
     carrito = carrito.filter(item => item.id !== id);
     guardarCarrito();
@@ -33,6 +41,7 @@ function eliminarProducto(id) {
     renderCarrito();
 }
 
+// Sumar cantidad
 function sumarCantidad(id) {
     const item = carrito.find(i => i.id === id);
     item.cantidad++;
@@ -41,6 +50,7 @@ function sumarCantidad(id) {
     renderCarrito();
 }
 
+// Restar cantidad
 function restarCantidad(id) {
     const item = carrito.find(i => i.id === id);
     if (item.cantidad > 1) {
@@ -54,6 +64,7 @@ function restarCantidad(id) {
     renderCarrito();
 }
 
+// Vaciar carrito
 function vaciarCarrito() {
     carrito = [];
     guardarCarrito();
@@ -61,6 +72,7 @@ function vaciarCarrito() {
     renderCarrito();
 }
 
+// Finalizar compra
 function finalizarCompra() {
     alert("Gracias por tu compra ❤️");
     carrito = [];
@@ -69,48 +81,12 @@ function finalizarCompra() {
     renderCarrito();
 }
 
+// Actualizar contador del icono
 function actualizarContadorCarrito() {
     const total = carrito.reduce((acc, item) => acc + item.cantidad, 0);
-    document.getElementById("cartCount").textContent = total;
+    const contador = document.getElementById("cartCount");
+    if (contador) contador.textContent = total;
 }
 
-actualizarContadorCarrito();
-
-// Guardar carrito en localStorage
-function saveCart(cart) {
-  localStorage.setItem("cart", JSON.stringify(cart));
-}
-
-// Cargar carrito al iniciar
-function loadCart() {
-  const cart = localStorage.getItem("cart");
-  return cart ? JSON.parse(cart) : [];
-}
-
-// Uso
-
-
-function addToCart(product) {
-  carrito.push(product);
-  saveCart(carrito);
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  let carrito = loadCart();
-  const cartContainer = document.getElementById("cart-items");
-
-  carrito.forEach(product => {
-    const item = document.createElement("div");
-    item.textContent = product.name + " - $" + product.price;
-    cartContainer.appendChild(item);
-  });
-});
-
-function addToCart(product) {
-  carrito.push(product);
-  saveCart(carrito);
-  window.location.href = "carrito.html"; // Redirige al carrito
-}
-
-
-
+// Inicializar contador
+actualizarContadorCarrito(); 

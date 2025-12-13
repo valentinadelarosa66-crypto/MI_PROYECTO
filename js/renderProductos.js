@@ -16,6 +16,4 @@ inventario.forEach(producto => {
             </div>
         </div>
     `;
-});
-
-document.getElementById("btnAgregar").onclick = () => agregarAlCarrito(producto.id);
+}); 
