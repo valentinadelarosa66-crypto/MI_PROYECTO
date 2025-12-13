@@ -98,7 +98,7 @@ document.getElementById("buscador").addEventListener("input", (e) => {
         `;
     });
 });
-
+ 
 
 
 
