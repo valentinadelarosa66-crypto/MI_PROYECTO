@@ -1,0 +1,49 @@
+/* ✅ Tarjeta elegante */
+.form-card {
+    background: var(--blanco);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* ✅ Inputs suaves */
+.form-control {
+    border-radius: 10px;
+    border: 1px solid var(--marron-claro);
+}
+
+.form-control:focus {
+    border-color: var(--rosa-fuerte);
+    box-shadow: 0 0 5px rgba(244, 182, 195, 0.5);
+}
+
+/* ✅ Barra de pasos del checkout */
+.checkout-steps {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.checkout-steps .step {
+    flex: 1;
+    text-align: center;
+    padding: 12px;
+    border-radius: 20px;
+    background: var(--rosa-claro);
+    color: var(--marron);
+    font-weight: 600;
+    margin: 0 5px;
+    opacity: 0.5;
+    transition: 0.3s ease;
+}
+
+.checkout-steps .step.active {
+    background: var(--rosa-fuerte);
+    opacity: 1;
+    box-shadow: 0 4px 10px rgba(244, 182, 195, 0.4);
+}
+
+.checkout-steps .step.completed {
+    background: var(--marron-claro);
+    opacity: 1;
+}

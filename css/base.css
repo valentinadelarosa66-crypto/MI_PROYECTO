@@ -1,0 +1,25 @@
+/* ✅ Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ✅ Tipografía general */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #faf7f5;
+    color: #6b4f3f;
+}
+
+/* ✅ Títulos */
+h1, h2, h3, h4 {
+    color: #6b4f3f;
+    font-weight: 600;
+}
+
+/* ✅ Contenedores */
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}

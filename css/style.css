@@ -198,3 +198,82 @@ body {
     opacity: 1;
 }
 
+/* ✅ Tarjeta elegante */
+.form-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* ✅ Inputs suaves */
+.form-control {
+    border-radius: 10px;
+    border: 1px solid #e6d5cf;
+}
+
+.form-control:focus {
+    border-color: #f4b6c3;
+    box-shadow: 0 0 5px rgba(244, 182, 195, 0.5);
+}
+
+/* ✅ Botón rosado */
+.btn-rose {
+    background-color: #f7c6d0;
+    color: #6b4f3f;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn-rose:hover {
+    background-color: #f4b6c3;
+}
+
+/* ✅ Botón gris suave */
+.btn-secondary {
+    background-color: #e6d5cf;
+    color: #6b4f3f;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.btn-secondary:hover {
+    background-color: #d8cfc9;
+}
+
+/* ✅ Barra de pasos del checkout */
+.checkout-steps {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.checkout-steps .step {
+    flex: 1;
+    text-align: center;
+    padding: 12px;
+    border-radius: 20px;
+    background: #f7e6eb;
+    color: #6b4f3f;
+    font-weight: 600;
+    margin: 0 5px;
+    opacity: 0.5;
+    transition: 0.3s ease;
+}
+
+.checkout-steps .step.active {
+    background: #f4b6c3;
+    opacity: 1;
+    box-shadow: 0 4px 10px rgba(244, 182, 195, 0.4);
+}
+
+.checkout-steps .step.completed {
+    background: #d8cfc9;
+    opacity: 1;
+}
+

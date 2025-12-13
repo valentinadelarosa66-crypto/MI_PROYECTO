@@ -1,0 +1,17 @@
+/* ✅ Formulario de contacto */
+#formContacto {
+    background: var(--blanco);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+#formContacto .form-control {
+    border-radius: 10px;
+    border: 1px solid var(--marron-claro);
+}
+
+#formContacto .form-control:focus {
+    border-color: var(--rosa-fuerte);
+    box-shadow: 0 0 5px rgba(244, 182, 195, 0.5);
+}

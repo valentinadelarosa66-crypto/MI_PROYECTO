@@ -4,14 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Información de Envío – Arte en Bolsos</title>
+
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styledecontacto.css"> <!-- si usas estilos pastel aquí -->
+    <link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/colores.css">
+<link rel="stylesheet" href="css/botones.css">
+<link rel="stylesheet" href="css/checkout.css">
+
 </head>
 <body>
 
 <div class="container py-5">
-    <h2 class="text-center mb-4">Información de Envío</h2>
 
-    <form id="formEnvio" class="p-4 bg-white shadow rounded">
+    <!-- ✅ Barra de progreso pastel -->
+    <div class="checkout-steps mb-4">
+        <div class="step completed">Carrito</div>
+        <div class="step active">Envío</div>
+        <div class="step">Pago</div>
+    </div>
+
+    <h2 class="text-center mb-4 text-brown">Información de Envío</h2>
+
+    <!-- ✅ Tarjeta elegante -->
+    <form id="formEnvio" class="form-card">
 
         <div class="mb-3">
             <label class="form-label">Nombre completo *</label>
@@ -33,34 +49,18 @@
             <input type="tel" class="form-control" id="telefonoEnvio" required>
         </div>
 
-        <button class="btn btn-rose w-100" type="submit">Ir al pago</button>
-        <button type="button" class="btn btn-secondary w-100 mt-2" id="btnVolverCarrito">
-    Volver al carrito
-</button>
+        <button class="btn btn-rose w-100 mt-2" type="submit">Ir al pago</button>
+
+        <button type="button" class="btn btn-secondary w-100 mt-3" id="btnVolverCarrito">
+            ← Volver al carrito
+        </button>
+
     </form>
 </div>
 
-<script>
-document.getElementById("formEnvio").addEventListener("submit", function(e){
-    e.preventDefault();
-
-    // Guardar datos en localStorage
-    const datosEnvio = {
-        nombre: document.getElementById("nombreEnvio").value,
-        direccion: document.getElementById("direccionEnvio").value,
-        ciudad: document.getElementById("ciudadEnvio").value,
-        telefono: document.getElementById("telefonoEnvio").value
-    };
-
-    localStorage.setItem("datosEnvio", JSON.stringify(datosEnvio));
-
-    // Ir a la página de pago
-    window.location.href = "pago.html";
-});
-document.getElementById("btnVolverCarrito").addEventListener("click", () => {
-    window.location.href = "carrito.html";
-});
-</script>
+<script src="js/envio.js"></script>
+<script src="js/contador.js"></script>
 
 </body>
 </html>
+

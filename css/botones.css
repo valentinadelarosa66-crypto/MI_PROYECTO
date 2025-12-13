@@ -1,0 +1,28 @@
+/* ✅ Botón rosado */
+.btn-rose {
+    background-color: var(--rosa-medio);
+    color: var(--marron);
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn-rose:hover {
+    background-color: var(--rosa-fuerte);
+}
+
+/* ✅ Botón gris suave */
+.btn-secondary {
+    background-color: var(--marron-claro);
+    color: var(--marron);
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.btn-secondary:hover {
+    background-color: #c8bfb9;
+}
