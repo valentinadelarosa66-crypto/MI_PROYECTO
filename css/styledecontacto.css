@@ -1,0 +1,69 @@
+/* ✅ Tarjetas blancas suaves */
+.bg-white {
+    background: #ffffff;
+    border-radius: 12px;
+}
+
+/* ✅ Sombra suave y elegante */
+.shadow {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* ✅ Títulos en marrón elegante */
+.text-brown {
+    color: #6b4f3f;
+}
+
+/* ✅ Botón rosado elegante */
+.btn-rose {
+    background-color: #f7c6d0;
+    color: #6b4f3f;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.btn-rose:hover {
+    background-color: #f4b6c3;
+    color: #4a3a32;
+}
+
+/* ✅ Inputs más suaves */
+.form-control, .form-select, textarea {
+    border-radius: 10px;
+    border: 1px solid #e6d5cf;
+    padding: 10px;
+}
+
+.form-control:focus, .form-select:focus, textarea:focus {
+    border-color: #f4b6c3;
+    box-shadow: 0 0 5px rgba(244, 182, 195, 0.5);
+}
+
+/* ✅ Tabla elegante */
+.table th {
+    width: 150px;
+    color: #6b4f3f;
+}
+
+.table td {
+    color: #4a3a32;
+}
+
+/* ✅ Encabezados */
+.section-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #6b4f3f;
+}
+
+/* ✅ Ajuste del mapa */
+iframe {
+    border-radius: 12px;
+}
+
+/* ✅ Espaciado entre columnas en pantallas pequeñas */
+@media (max-width: 768px) {
+    .col-lg-6 {
+        margin-bottom: 20px;
+    }
+}
