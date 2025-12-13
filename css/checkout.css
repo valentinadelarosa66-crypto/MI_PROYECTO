@@ -47,3 +47,9 @@
     background: var(--marron-claro);
     opacity: 1;
 }
+
+/* Centrar el contenido del checkout */
+.checkout-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
