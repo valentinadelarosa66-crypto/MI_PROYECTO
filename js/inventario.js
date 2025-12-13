@@ -20,7 +20,7 @@ const inventario = [
         artesana: "Ana Pérez",
         imagen: "imagen7(t).jpg",
         descripcion: "Tejido artesanal con diseño tradicional.",
-        puntuacion: 4.5,
+        puntuacion: 4,
         reseñas: 30
     },
     {
@@ -44,7 +44,7 @@ const inventario = [
         artesana: "Carmen Ruiz",
         imagen: "imagen6(a).jpg",
         descripcion: "Accesorio artesanal para decorar bolsos.",
-        puntuacion: 3.5,
+        puntuacion: 3,
         reseñas: 23
     }
 ];
