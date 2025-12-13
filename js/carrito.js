@@ -90,3 +90,7 @@ function actualizarContadorCarrito() {
 
 // Inicializar contador
 actualizarContadorCarrito(); 
+
+document.getElementById("btnContinuarEnvio").addEventListener("click", () => {
+    window.location.href = "envio.html";
+});

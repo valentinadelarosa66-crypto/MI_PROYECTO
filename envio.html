@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información de Envío – Arte en Bolsos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container py-5">
+    <h2 class="text-center mb-4">Información de Envío</h2>
+
+    <form id="formEnvio" class="p-4 bg-white shadow rounded">
+
+        <div class="mb-3">
+            <label class="form-label">Nombre completo *</label>
+            <input type="text" class="form-control" id="nombreEnvio" required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Dirección *</label>
+            <input type="text" class="form-control" id="direccionEnvio" required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Ciudad *</label>
+            <input type="text" class="form-control" id="ciudadEnvio" required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Teléfono *</label>
+            <input type="tel" class="form-control" id="telefonoEnvio" required>
+        </div>
+
+        <button class="btn btn-rose w-100" type="submit">Ir al pago</button>
+        <button type="button" class="btn btn-secondary w-100 mt-2" id="btnVolverCarrito">
+    Volver al carrito
+</button>
+    </form>
+</div>
+
+<script>
+document.getElementById("formEnvio").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    // Guardar datos en localStorage
+    const datosEnvio = {
+        nombre: document.getElementById("nombreEnvio").value,
+        direccion: document.getElementById("direccionEnvio").value,
+        ciudad: document.getElementById("ciudadEnvio").value,
+        telefono: document.getElementById("telefonoEnvio").value
+    };
+
+    localStorage.setItem("datosEnvio", JSON.stringify(datosEnvio));
+
+    // Ir a la página de pago
+    window.location.href = "pago.html";
+});
+document.getElementById("btnVolverCarrito").addEventListener("click", () => {
+    window.location.href = "carrito.html";
+});
+</script>
+
+</body>
+</html>
