@@ -12,3 +12,6 @@ document.getElementById("productoPrecio").textContent = "$" + producto.precio.to
 document.getElementById("productoDescripcion").textContent = producto.descripcion;
 document.getElementById("productoArtesana").textContent = producto.artesana;
 
+document.getElementById("btnAgregar").onclick = () => {
+    agregarAlCarrito(producto.id);
+};
