@@ -1,21 +1,20 @@
-// ✅ Obtener el contador global
-let visitasTotales = localStorage.getItem("visitasTotales");
+// ✅ Nombre único de la página actual
+const pagina = window.location.pathname;
 
-// ✅ Si no existe, lo creamos en 0
-if (!visitasTotales) {
-    visitasTotales = 0;
+// ✅ Obtener contador de esta página
+let contador = localStorage.getItem("visitas_" + pagina);
+
+// ✅ Si no existe, iniciamos en 0
+if (!contador) {
+    contador = 0;
 }
 
-// ✅ Revisar si este usuario ya fue contado
-let usuarioContado = localStorage.getItem("usuarioContado");
+// ✅ Aumentar solo cuando se refresca la página
+contador++;
 
-// ✅ Si NO ha sido contado, lo contamos
-if (!usuarioContado) {
-    visitasTotales++;
-    localStorage.setItem("visitasTotales", visitasTotales);
-    localStorage.setItem("usuarioContado", "true");
-}
+// ✅ Guardar el nuevo valor
+localStorage.setItem("visitas_" + pagina, contador);
 
 // ✅ Mostrar el contador
 document.getElementById("contadorVisitas").textContent =
-    "Visitas totales al sitio: " + visitasTotales;
+    "Visitas a esta página: " + contador;
