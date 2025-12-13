@@ -6,6 +6,9 @@ function renderCarrito() {
         return;
     }
 
+    // ✅ Calcular total general
+    const totalGeneral = carrito.reduce((acc, item) => acc + item.precio * item.cantidad, 0);
+
     contenedor.innerHTML = `
         <table class="table table-bordered">
             <thead>
@@ -38,6 +41,11 @@ function renderCarrito() {
                 `).join("")}
             </tbody>
         </table>
+
+        <!-- ✅ Total general -->
+        <div class="text-end mt-3">
+            <h4>Total a pagar: <strong>$${totalGeneral.toLocaleString()}</strong></h4>
+        </div>
     `;
 }
 
