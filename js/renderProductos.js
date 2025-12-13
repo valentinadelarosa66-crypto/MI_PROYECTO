@@ -60,6 +60,11 @@ document.getElementById("buscador").addEventListener("input", (e) => {
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title text-brown">${producto.nombre}</h5>
                         <p class="card-text">${producto.descripcion}</p>
+                        <!-- ✅ ESTRELLAS DINÁMICAS + RESEÑAS -->
+<div class="text-center mb-2">
+    ${generarEstrellas(producto.puntuacion)}
+    <span class="text-muted">(${producto.reseñas} reseñas)</span>
+</div>
 
                         <div class="mt-auto d-flex justify-content-between align-items-center">
                             <span class="price">$${producto.precio.toLocaleString()}</span>
@@ -71,6 +76,21 @@ document.getElementById("buscador").addEventListener("input", (e) => {
         `;
     });
 });
+
+// ✅ Generar estrellas dinámicas
+function generarEstrellas(puntuacion) {
+    let estrellas = "";
+
+    for (let i = 1; i <= 5; i++) {
+        if (i <= puntuacion) {
+            estrellas += `<i class="fa fa-star text-warning"></i>`;
+        } else {
+            estrellas += `<i class="fa fa-star text-muted"></i>`;
+        }
+    }
+
+    return estrellas;
+}
 
 
 

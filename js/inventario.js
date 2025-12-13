@@ -7,7 +7,9 @@ const inventario = [
         stock: 4,
         artesana: "María Torres",
         imagen: "imagen5(c).jpg",
-        descripcion: "Bolso elegante hecho en cuero genuino."
+        descripcion: "Bolso elegante hecho en cuero genuino.",
+        puntuacion: 4,
+        reseñas: 50
     },
     {
         id: "002",
@@ -17,7 +19,9 @@ const inventario = [
         stock: 6,
         artesana: "Ana Pérez",
         imagen: "imagen7(t).jpg",
-        descripcion: "Tejido artesanal con diseño tradicional."
+        descripcion: "Tejido artesanal con diseño tradicional.",
+        puntuacion: 4.5,
+        reseñas: 30
     },
     {
         id: "003",
@@ -27,7 +31,9 @@ const inventario = [
         stock: 5,
         artesana: "Luisa Gómez",
         imagen: "imagen4.jpeg",
-        descripcion: "Ligero, natural y perfecto para el verano."
+        descripcion: "Ligero, natural y perfecto para el verano.",
+        puntuacion: 5,
+        reseñas: 25
     },
     {
         id: "004",
@@ -37,6 +43,8 @@ const inventario = [
         stock: 20,
         artesana: "Carmen Ruiz",
         imagen: "imagen6(a).jpg",
-        descripcion: "Accesorio artesanal para decorar bolsos."
+        descripcion: "Accesorio artesanal para decorar bolsos.",
+        puntuacion: 3.5,
+        reseñas: 23
     }
 ];
