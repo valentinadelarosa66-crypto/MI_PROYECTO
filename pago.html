@@ -8,44 +8,43 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/styledecontacto.css">
     <link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/colores.css">
-<link rel="stylesheet" href="css/botones.css">
-<link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/colores.css">
+    <link rel="stylesheet" href="css/botones.css">
+    <link rel="stylesheet" href="css/checkout.css">
 
-
-    <!-- PayPal -->
-    <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD"></script>
+    <!-- ✅ PayPal REAL (solo uno) -->
+    <script src="https://www.paypal.com/sdk/js?client-id=AZxnPZBBtm1K3gFF9dHkDK8eCz0KDiDv1l0vdhluP4TnNfVmNxyWhYFXYi8E9X8RtyRz9fdeItr5L6Us&currency=COP"></script>
 </head>
 <body>
 
-<div class="container py-5 checkout-container">
+<div class="container py-5">
+    <div class="checkout-container">
 
-    <!-- ✅ Barra de progreso pastel -->
-    <div class="checkout-steps mb-4">
-        <div class="step completed">Carrito</div>
-        <div class="step completed">Envío</div>
-        <div class="step active">Pago</div>
+        <!-- ✅ Barra de progreso pastel -->
+        <div class="checkout-steps mb-4">
+            <div class="step completed">Carrito</div>
+            <div class="step completed">Envío</div>
+            <div class="step active">Pago</div>
+        </div>
+
+        <h2 class="text-center mb-4 text-brown">Finalizar Pago</h2>
+
+        <!-- ✅ Botón para regresar -->
+        <button class="btn btn-secondary w-100 mb-4" id="btnVolverEnvio">
+            ← Volver a información de envío
+        </button>
+
+        <!-- ✅ Tarjeta elegante del resumen -->
+        <div id="resumenPedido" class="form-card mb-4"></div>
+
+        <!-- ✅ Botón de PayPal -->
+        <div id="paypal-button-container"></div>
+
     </div>
-
-    <h2 class="text-center mb-4 text-brown">Finalizar Pago</h2>
-
-    <!-- ✅ Botón para regresar -->
-    <button class="btn btn-secondary w-100 mb-4" id="btnVolverEnvio">
-        ← Volver a información de envío
-    </button>
-
-    <!-- ✅ Tarjeta elegante del resumen -->
-    <div id="resumenPedido" class="form-card mb-4"></div>
-
-    <!-- ✅ Botón de PayPal -->
-    <div id="paypal-button-container"></div>
-
 </div>
 
-<script src="https://www.paypal.com/sdk/js?client-id=AZxnPZBBtm1K3gFF9dHkDK8eCz0KDiDv1l0vdhluP4TnNfVmNxyWhYFXYi8E9X8RtyRz9fdeItr5L6Us&currency=COP"></script>
-<script src="js/pago.js"></script>
-<script src="js/contador.js"></script>
-
+<script src="js/pago.js"></script> 
+<script src="js/contador.js"></script> 
 
 </body>
 </html>

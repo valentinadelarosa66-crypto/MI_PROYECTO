@@ -6,56 +6,58 @@
     <title>Información de Envío – Arte en Bolsos</title>
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/styledecontacto.css"> <!-- si usas estilos pastel aquí -->
+    <link rel="stylesheet" href="css/styledecontacto.css">
     <link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/colores.css">
-<link rel="stylesheet" href="css/botones.css">
-<link rel="stylesheet" href="css/checkout.css">
-
+    <link rel="stylesheet" href="css/colores.css">
+    <link rel="stylesheet" href="css/botones.css">
+    <link rel="stylesheet" href="css/checkout.css">
 </head>
 <body>
 
-<div class="container py-5 checkout-container">
+<div class="container py-5">
+    <div class="checkout-container">
 
-    <!-- ✅ Barra de progreso pastel -->
-    <div class="checkout-steps mb-4">
-        <div class="step completed">Carrito</div>
-        <div class="step active">Envío</div>
-        <div class="step">Pago</div>
+        <!-- ✅ Barra de progreso pastel -->
+        <div class="checkout-steps mb-4">
+            <div class="step completed">Carrito</div>
+            <div class="step active">Envío</div>
+            <div class="step">Pago</div>
+        </div>
+
+        <h2 class="text-center mb-4 text-brown">Información de Envío</h2>
+
+        <!-- ✅ Tarjeta elegante -->
+        <form id="formEnvio" class="form-card">
+
+            <div class="mb-3">
+                <label class="form-label">Nombre completo *</label>
+                <input type="text" class="form-control" id="nombreEnvio" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Dirección *</label>
+                <input type="text" class="form-control" id="direccionEnvio" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Ciudad *</label>
+                <input type="text" class="form-control" id="ciudadEnvio" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Teléfono *</label>
+                <input type="tel" class="form-control" id="telefonoEnvio" required>
+            </div>
+
+            <button class="btn btn-rose w-100 mt-2" type="submit">Ir al pago</button>
+
+            <button type="button" class="btn btn-secondary w-100 mt-3" id="btnVolverCarrito">
+                ← Volver al carrito
+            </button>
+
+        </form>
+
     </div>
-
-    <h2 class="text-center mb-4 text-brown">Información de Envío</h2>
-
-    <!-- ✅ Tarjeta elegante -->
-    <form id="formEnvio" class="form-card">
-
-        <div class="mb-3">
-            <label class="form-label">Nombre completo *</label>
-            <input type="text" class="form-control" id="nombreEnvio" required>
-        </div>
-
-        <div class="mb-3">
-            <label class="form-label">Dirección *</label>
-            <input type="text" class="form-control" id="direccionEnvio" required>
-        </div>
-
-        <div class="mb-3">
-            <label class="form-label">Ciudad *</label>
-            <input type="text" class="form-control" id="ciudadEnvio" required>
-        </div>
-
-        <div class="mb-3">
-            <label class="form-label">Teléfono *</label>
-            <input type="tel" class="form-control" id="telefonoEnvio" required>
-        </div>
-
-        <button class="btn btn-rose w-100 mt-2" type="submit">Ir al pago</button>
-
-        <button type="button" class="btn btn-secondary w-100 mt-3" id="btnVolverCarrito">
-            ← Volver al carrito
-        </button>
-
-    </form>
 </div>
 
 <script src="js/envio.js"></script>
